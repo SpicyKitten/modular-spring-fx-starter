@@ -1,7 +1,10 @@
-module io.github.spicykitten.modular_spring_fx {
+open module io.github.spicykitten.modular_spring_fx_starter
+{
     requires javafx.controls;
     requires javafx.fxml;
-
-    opens io.github.spicykitten.modular_spring_fx to javafx.fxml;
-    exports io.github.spicykitten.modular_spring_fx;
+	requires spring.boot.autoconfigure;
+	requires spring.boot;
+	requires spring.boot.test;
+	requires org.junit.jupiter.api;
+	exports io.github.spicykitten.modularspringfx;
 }
