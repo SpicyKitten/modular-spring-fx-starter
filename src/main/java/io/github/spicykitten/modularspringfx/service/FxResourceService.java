@@ -13,5 +13,5 @@ public interface FxResourceService extends FxService
 	<T> T fetchResource(FXMLLoader loader, String resource) throws IOException;
 	<T> List<T> fetchResources(String... resources) throws IOException;
 	<T> T fetchResource(String resource) throws IOException;
-	FXMLLoader fetchLoader();;
+	FXMLLoader fetchLoader();
 }

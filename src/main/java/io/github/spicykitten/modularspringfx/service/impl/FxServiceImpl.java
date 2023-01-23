@@ -4,7 +4,6 @@ import org.springframework.stereotype.Service;
 import io.github.spicykitten.modularspringfx.service.FxService;
 
 @Service
-public class FxServiceImpl implements FxService
+public abstract class FxServiceImpl implements FxService
 {
-
 }
