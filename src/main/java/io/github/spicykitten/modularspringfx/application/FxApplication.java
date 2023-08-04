@@ -17,7 +17,7 @@ public class FxApplication extends Application
 	{
 		System.out.println("Controller is: " + controller);
 		System.out.println(primaryStage);
-		primaryStage.setTitle(controller.getTitle());
+		primaryStage.setTitle(controller.getContext().getTitle());
 		primaryStage.show();
 	}
 }
