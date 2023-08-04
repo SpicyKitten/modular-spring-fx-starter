@@ -1,0 +1,1 @@
+package io.github.spicykitten.modularspringfx.services.impl.resource;

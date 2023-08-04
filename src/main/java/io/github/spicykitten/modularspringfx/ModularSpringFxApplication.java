@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-import io.github.spicykitten.modularspringfx.service.FxApplicationStartupService;
+import io.github.spicykitten.modularspringfx.services.service.application.FxApplicationStartupService;
 
 @SpringBootApplication
 @EnableAutoConfiguration( exclude =

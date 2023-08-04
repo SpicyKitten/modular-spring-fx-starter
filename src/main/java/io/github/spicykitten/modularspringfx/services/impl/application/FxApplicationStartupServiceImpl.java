@@ -1,14 +1,14 @@
-package io.github.spicykitten.modularspringfx.service.impl;
+package io.github.spicykitten.modularspringfx.services.impl.application;
 
 import java.io.IOException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.stereotype.Service;
-
-import io.github.spicykitten.modularspringfx.service.FxApplicationContextService;
-import io.github.spicykitten.modularspringfx.service.FxApplicationStartupService;
-import io.github.spicykitten.modularspringfx.service.FxResourceService;
+import io.github.spicykitten.modularspringfx.services.impl.FxServiceImpl;
+import io.github.spicykitten.modularspringfx.services.service.application.FxApplicationContextService;
+import io.github.spicykitten.modularspringfx.services.service.application.FxApplicationService;
+import io.github.spicykitten.modularspringfx.services.service.application.FxApplicationStartupService;
+import io.github.spicykitten.modularspringfx.services.service.resource.FxResourceService;
 import javafx.application.Platform;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -22,6 +22,8 @@ public class FxApplicationStartupServiceImpl extends FxServiceImpl
 	private FxResourceService resourceService;
 	@Autowired
 	private FxApplicationContextService contextService;
+	@Autowired
+	private FxApplicationService applicationService;
 
 	@Override
 	public void start(ApplicationArguments args)
@@ -37,7 +39,8 @@ public class FxApplicationStartupServiceImpl extends FxServiceImpl
 				var stage = new Stage();
 				System.out.println("Stage: " + stage);
 				stage.setScene(scene);
-				stage.show();
+				var application = applicationService.getApplication();
+				application.start(stage);
 				System.out.println("Stage width: %s".formatted(stage.getWidth()));
 				System.out.println("Run successfully as an application!");
 			}

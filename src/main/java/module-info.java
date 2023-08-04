@@ -20,6 +20,12 @@ open module io.github.spicykitten.modular_spring_fx_starter
 	exports io.github.spicykitten.modularspringfx.application;
 	exports io.github.spicykitten.modularspringfx.configuration;
 	exports io.github.spicykitten.modularspringfx.controller;
-	exports io.github.spicykitten.modularspringfx.service;
-	exports io.github.spicykitten.modularspringfx.service.impl;
+	exports io.github.spicykitten.modularspringfx.services.service;
+	exports io.github.spicykitten.modularspringfx.services.service.action;
+	exports io.github.spicykitten.modularspringfx.services.service.application;
+	exports io.github.spicykitten.modularspringfx.services.service.resource;
+	exports io.github.spicykitten.modularspringfx.services.impl;
+	exports io.github.spicykitten.modularspringfx.services.impl.action;
+	exports io.github.spicykitten.modularspringfx.services.impl.application;
+	exports io.github.spicykitten.modularspringfx.services.impl.resource;
 }

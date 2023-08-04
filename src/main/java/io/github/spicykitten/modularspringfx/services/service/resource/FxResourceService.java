@@ -1,9 +1,10 @@
-package io.github.spicykitten.modularspringfx.service;
+package io.github.spicykitten.modularspringfx.services.service.resource;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+import io.github.spicykitten.modularspringfx.services.service.FxService;
 import javafx.fxml.FXMLLoader;
 
 public interface FxResourceService extends FxService
