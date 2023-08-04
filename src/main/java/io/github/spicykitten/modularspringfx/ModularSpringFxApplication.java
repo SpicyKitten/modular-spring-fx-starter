@@ -13,9 +13,9 @@ import org.springframework.stereotype.Component;
 import io.github.spicykitten.modularspringfx.services.service.application.FxApplicationStartupService;
 
 @SpringBootApplication
-@EnableAutoConfiguration( exclude =
-	{ DataSourceAutoConfiguration.class } )
-@Profile( "!test" )
+@EnableAutoConfiguration(exclude =
+	{DataSourceAutoConfiguration.class})
+@Profile("!test")
 @Component
 public class ModularSpringFxApplication implements ApplicationRunner
 {

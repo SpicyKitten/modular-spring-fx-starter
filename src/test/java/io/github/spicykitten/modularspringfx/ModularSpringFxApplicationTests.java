@@ -9,13 +9,13 @@ import org.springframework.boot.test.system.CapturedOutput;
 import org.springframework.boot.test.system.OutputCaptureExtension;
 import org.springframework.test.context.ActiveProfiles;
 
-@ActiveProfiles( "test" )
-@SpringBootTest( classes =
-	{ ModularSpringFxApplication.class } )
+@ActiveProfiles("test")
+@SpringBootTest(classes =
+	{ModularSpringFxApplication.class})
 public class ModularSpringFxApplicationTests
 {
 	@Test
-	@ExtendWith( OutputCaptureExtension.class )
+	@ExtendWith(OutputCaptureExtension.class)
 	void testOutput(CapturedOutput capturedOutput)
 	{
 		var logger = LoggerFactory.getLogger(ModularSpringFxApplicationTests.class);
@@ -23,7 +23,7 @@ public class ModularSpringFxApplicationTests
 		Assertions.assertTrue(capturedOutput.getOut().contains("Test run successfully."));
 	}
 
-	@SuppressWarnings( "serial" )
+	@SuppressWarnings("serial")
 	static class CustomException extends Exception
 	{
 		public CustomException(String message)

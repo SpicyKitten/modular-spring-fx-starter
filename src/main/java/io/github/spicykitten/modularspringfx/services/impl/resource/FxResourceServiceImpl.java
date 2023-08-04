@@ -5,7 +5,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Service;
-
 import io.github.spicykitten.modularspringfx.services.impl.FxServiceImpl;
 import io.github.spicykitten.modularspringfx.services.service.resource.FxResourceService;
 import javafx.fxml.FXMLLoader;
